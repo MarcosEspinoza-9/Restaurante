@@ -1,5 +1,5 @@
 body{
-    background-color: #fff0b3;
+    background-color: rgb(255, 255, 255);
 }
 .titulo-principal{
     padding-left: 30px;
@@ -13,9 +13,13 @@ body{
 
 p{
     text-align: center;
+    font-style: italic;
+
 }
 em strong{
-    color: red;
+    /* color: red; */
+    font-weight: bold;
+    font-style: italic;
 }
 
 #mision{
@@ -35,7 +39,8 @@ em strong{
 .diferenciales{
     background-color: #a7a0a0a2;
     padding: 20px;
-    margin-top: 5px
+    margin-top: 100px;
+        
 }
 
 
@@ -49,6 +54,42 @@ ul{
     width: 20%;
     margin-right: 15%
 }
-.imagendiferenciales{
-    width: 30%;
+
+
+/*? CSS para la pagina principal */
+.portada{
+    width: 100%;
 }
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em;
+    clear:  left; /*? solo aplica a la imagen */
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.portada{
+    margin-bottom: 100px;
+}
+
+.banne{
+    width: 25%;
+}
+
+.cliente{
+    /*? float pone la imagen a la posicion izq. */
+    float: left; 
+    width: 30%;
+    margin: 0 10px 0 10px; /*? en sentido de las manesillas del reloj*/
+}
+
+
