@@ -1,0 +1,190 @@
+header{
+    background-color: blanchedalmond;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#logo{
+   width: 30%; 
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    
+}
+
+nav li{
+ display: inline-block; /*para poner un elemento al lado del otro y no con saltos */
+
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 0 0 20px;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+/* items de la lista*/
+ul.productos {
+    display: inline-flex;
+    text-align: center;
+    width: 90%;
+    vertical-align: top;
+    padding: 50px;
+    
+}
+
+.productos li {
+    border: black solid;
+    border-radius: 40px;
+    margin-left: 50px;
+    background-color: bisque;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.productos li img{
+    width: 250px;
+    
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/** esto cambia cuando se pasa el cursor sobre los productos, aumenta su tamaño */
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+    padding: 20px;
+
+}
+
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/** La propiedad HOVER ( : ) caputura el movimiento del mouse
+** cuando se pasa el mouse por encima de la barra de navegacion se cambia de color para resaltar */ 
+nav a:hover{
+    color: #ea7055;
+    
+}
+
+.productos li:hover{
+    border-color: #ea7055;
+}
+
+/** para capturar el click sobre algo */
+.productos li:active{
+    border-color: green;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.623);
+    text-align: center;
+}
+
+footer img{
+    width: 18%;
+}
+
+footer p{
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer p:hover{
+    color: #770373f8;
+}
+
+.drinks{
+    text-align: center;
+    font-size: 70px;
+}
+
+main{
+    /** Para centralizar algo */
+    width: 940px; 
+    margin: 0 auto;
+}
+
+form{
+     margin: 40px; /**sirve para dar como un tipo salto de linea */
+}
+
+form label , form legend{
+    display: block; 
+    font-size:20px;
+    margin: 0 0 10px;
+}
+
+/** la coma significa que todas la configuraciones tambien se replican en lo demas7 */
+.padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.check{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ea7055;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transition: .8s;
+    transform: scale(1.5);
+    /* transform: rotate(70deg); */
+}
+
+table{
+    margin: 40px 40px;
+    margin-left: 9%;
+}
+
+thead{
+    background-color: bisque;
+    font-weight: bold;
+}
+
+td , th{
+    border: 1px solid;
+    padding: 8px 15px;
+}

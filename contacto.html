@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Los Molcajetes</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="productos.css" />
+  </head>
+  <body>
+    <!-- encabezado -->
+    <header>
+      <div class="caja">
+        <h1><img src="img/logo.png" alt="Logo" id="logo" /></h1>
+
+        <!-- contenido del panel de navegacion con listas -->
+        <!-- panel de navigacion -->
+        <nav>
+          <ul class="">
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="productos.html">productos</a></li>
+            <li class="items"><a href="contacto.html">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+        <!-- Formulario 
+        le doy un id al input para despues asociarlo con
+        el label y cuando de click encima, habilite la cajita 
+        de texto
+
+        Los formularios siempre llevan un input y un label y el boton
+        -->
+        <form action="">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="padron" required placeholder="Nombre completo">
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="padron" required placeholder="email@gmail.com">
+            
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="padron" required placeholder="(XXX-XXX-XXX-XX-XX)">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="60" rows="10" class="padron" required></textarea>
+
+            <!--? Se usa para crear una división en nuestro formulario, con uno o más <input>. -->
+            <fieldset>
+              <!--? etiqueta de titulo legend  para un título de un grupo de campos en cualquier formulario.-->
+                <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contacto" value="email" id="radio-email">
+
+                <label for="radio-telefono">Telefono</label>
+                <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+
+                <label for="radio-whatsapp">WhatsApp</label>
+                <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
+            </fieldset>    
+
+            <!--? Se usa para crear una división en nuestro formulario, con uno o más <input>.-->
+            <fieldset>
+              <!--? etiqueta de titulo legend  para un título de un grupo de campos en cualquier formulario.-->
+                <legend>En cual horario prefiere ser atendido</legend>
+                <select name="" id="">
+                  <option value="">Mañana</option>
+                  <option value="">Medio día</option>
+                  <option value="">Tarde-noche</option>
+                </select>
+           </fieldset>
+                <label for=""><input type="checkbox" class="check" checked>Le gustaria reicibir novedades del restuaurante?</label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar">
+                
+        </form>
+
+        <table>
+          <!--? Th (table head o encabezado de la tabla) -->
+          <thead>
+            <tr> <!--? Horizontal table rows-->
+              <th>Día</th> <!--? celdas a lo horizontal. Una line a lo horizontal-->
+              <th>Horario</th>
+            </tr>
+          </thead>
+         
+
+          <!--? CUERPO DE LA TABLA -->
+          <tbody>
+            <tr>
+                <td>Sábado</td>
+                <td>10:00 Am a 6:00 Pm</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>10:00 Am a 6:00 Pm</td>
+            </tr>  
+          </tbody>
+        </table>
+
+    </main>
+
+
+
+     <!-- pie de pagina  -->
+     <footer>
+
+        <img src="img/logo.png" alt="Logo no disponible">
+        <p>
+            &copy 2024 Los Molcajetes 2 | Todos Los Derechos Reservados
+        </p>
+  
+      </footer>
