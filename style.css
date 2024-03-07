@@ -180,3 +180,26 @@ footer{
 }
 
 
+/*?! MEDIAQUERIES */
+/** si se encentra una pagina menor a 480px has lo siguiente.... */
+@media screen and (max-width:480px){
+header{
+    width: 100%!important;
+}
+
+h1{
+ text-align: center;
+}
+nav{
+    position: static;
+}
+
+
+.caja , .principal, .mapa , .contenido-diferenciales, .video-molcajete, .portada,header{
+    width: auto;
+}
+
+.lista-diferenciales, .banne{
+    width: 50%;
+    }
+}
